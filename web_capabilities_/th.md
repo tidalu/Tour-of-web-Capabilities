@@ -162,3 +162,25 @@
         --- sensors u wanna use are accelerometer, gyroscope magnetometer
 
 ## Geolocation API
+
+    - How does it work ?
+    - Provide agnostic
+    - it needs user's permission
+    - it relies on the browser or operation system service
+    - works only in the foreground
+    - not suitable for geofencing or beacon-based location
+
+### Accuracy on location
+
+        • Since iOS and iPadOS 14, users can decide
+            if they want to share with apps precise or
+            imprecise location
+        • User grant that location to Safari to all web
+            apps at the same time
+        • There is no API to actually know in which
+            mode the user is
+        • For imprecise, you will get an accuracy
+            between 3000 to 9000 meters (~2 to 6
+            miles)
+        • Android 12+ has a similar issue but not
+            affecting web apps a lot.
