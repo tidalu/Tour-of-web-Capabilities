@@ -184,3 +184,7 @@
             miles)
         • Android 12+ has a similar issue but not
             affecting web apps a lot.
+
+## Screen Orientation
+
+    - It is green , to mainly know if the device is landscape or portrait
