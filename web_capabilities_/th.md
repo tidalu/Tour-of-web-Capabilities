@@ -188,3 +188,40 @@
 ## Screen Orientation
 
     - It is green , to mainly know if the device is landscape or portrait
+
+### Touch Events
+
+    - They work only with touch screens
+        -- BAsic: touchstart, touchend , touchcancel
+        -- drag: touchmove
+    - Event is fired with multiple coordinates(for multi-touch) including optional force  if available
+
+### Pointer Events
+
+    - They work with mouse , trackpad, touch, pen, stylus and more, you recieve one call per interaction,
+        even if they are at the same time
+        -- Press: pointerdown ,pointerup, pointercancel
+        -- Hover: pointerover, pointerout
+        -- Drag: pointermove, pointerenter, pointerleave
+    - The event recieves coordinates, a pointer id, the pointer type and optional pressure, litl, twist
+        data (useful with a stylus or on some touch screens )
+
+### Virtual keyboard
+
+    - to use with touch devices
+        navigator.virtualkeyboard.overlaysContent = true;
+        navigator.virtualkeyboard.show()
+        navigator.virtualkeyboard.hide()
+        navigator.virtualkeyboard.addEventListenter('geometrychanged', e => {})
+
+    - for css, there are also new environmental variables
+        keyboard-insert-top
+        keyboard-insert-bottom
+        keyboard-insert-right
+        keyboard-insert-left
+        keyboard-insert-width
+        keyboard-insert-height
+
+        margin-block-end: env(keyboard-insert-height, 100px);
+
+
