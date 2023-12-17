@@ -33,4 +33,132 @@
     * [MDN](developer.mozilla.com)
     * [CanIuse](caniuse.com)
     * [web.dev](web.dev)
-    * []
+    * [webKit](webkit.org/blog)
+    * [chromeStatus](chromestatus.com)
+
+### Baseline
+
+    - A multi-vendor effort
+    - Defines  alist of stable capabilities for all browsers (green)
+    - stable version for the Web
+    - one list per year starting with 2023
+    - Every year we will have new one like :
+    - Baseline 2024
+    - Baseline 2025
+
+## Basic APIs
+
+### Permissions and security
+
+    - Some permissions
+        -- Are harmless
+        -- Have no cost
+
+    - Sone other permissions
+        -- Open a privacy risk[ camer, microphone, location]
+        -- involves a cost
+
+    - When there are costs or risks , some browsers decides to put a limit
+        on it
+        -- User enganement requirements
+        -- Permission dialog to the user [ it is when we are using google meet or meeting links, or maps  browser asks to access to the camera, location, audio]
+
+    - Most capabilities will require HTTPS[safari still not]
+
+    - Some capabilities will need a user interaction to be enabled ( aka
+        you cannot trigger it on page load )
+
+    - Permissions are granted on an origin base
+
+    - If user denies a permission, the API won't be able to ask again ,
+        manual re-enable will be mandatory
+
+    - If user granted a permission, it may be with no time limit , for a
+        couple of days, for the session or just one useage
+
+
+    - The APi is enabled by default to the main navigation and sometimes
+        off for iframes
+
+    - What if you want to turn a capability on or off ?
+        -- Permissions Policy spec
+        -- It is an HTTP header: Permissions-Policy
+        -- For iframes it is  an HTML attribute
+
+    We can define multiple policies at one of with multiple HTTP headers
+    ```
+        Permissions-Policy: geolocation=(self "https://www.domain.com"
+        "https://my.domain.com") camera=* picture-in-picture=()
+
+        Permissions-Policy: bluetooth=()
+    ```
+
+## Permission API
+
+    -  it can be "granted", "prompt", "denied"
+        if it throws exception, it's an unsupported permission
+
+## Sensors
+
+    - What is a sensor > A sensor is a chipset that is
+        available oin one particular  device that is measuring
+        something
+
+
+    - There are different sensors on devices mostly on mobile
+        devices
+        -- Accelerometer (3 axis{x, y, z, currentAcceleration})
+            --> it is postion of the
+            device ex. on mobile, how we are holding the phone, we can detect that even
+        -- Gyroscope -->  it is like one axis but we can
+            get the values of the angle of the device
+
+        -- Magnetometer --> like compas we can detect that
+
+        -- Proximity --> it is to detect how the user is
+            interacting with phone like distance between user
+            and device, ex. if user is playing a game and got a
+            call, gets the phone to his ears , at that time we
+            should pause the game ofc
+
+        -- Light sensor --> it is to detect the linght in the
+            rooom and then we can change from dark to light , like that
+
+
+    - There are typically two ways to consume them:
+
+        -- Old APIs (global DOM Apis)
+
+        -- Sensor API ( not on safari )
+
+
+    - Sensor permissions set for HTTP headers
+
+        -- AbsoluteOrientationSensor
+            Permission Policy Name : 'accelerometer',
+            'gyroscope' , 'magnetometer'
+
+        -- Accelerometer
+            Permission Policy Name : 'accelerometer'
+
+        -- AmbientLightSensor
+            Permission Policy Name : 'ambient-light-sensor'
+
+        -- GravitySensor
+            Permission Policy Name : 'accelerometer'
+
+        -- Gyroscope
+            Permission Policy Name : 'gyroscope'
+
+        -- LinearAcceleratorSensor
+            Permission Policy Name : 'accelerometer', 'linear-acceleration-sensor'
+
+        -- Magnetometer
+            Permission Policy Name : 'magnetometer'
+
+        -- RelativeOrientationSensor
+            Permission Policy Name : 'accelerometer', 'gyroscope' , 'magnetometer'
+
+        --- sensors u wanna use are accelerometer, gyroscope magnetometer
+
+## Geolocation API
