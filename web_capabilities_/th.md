@@ -329,6 +329,6 @@
     - It requires user permission before allowing web applications to access USB devices.
     - Configuring device settings, updating firmware, and accessing device data.
 
-## Vibration
+## Vibration - Battery Status API
 
     - It does not work on Many browsers
