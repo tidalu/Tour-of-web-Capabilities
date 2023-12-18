@@ -345,3 +345,9 @@
     - Low-level I/O operations and Host-based Card Emulation (HCE) are not supported.
 
     - We will need user's permission and then we will start scanning for NFc tags
+
+## Managing windows
+
+### Multi-screen windows placement API
+
+    - we can move windows !
