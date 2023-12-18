@@ -240,3 +240,8 @@
 ## Speech Recognition API
 
     - It allows us to listen for user's voice and get a text transcript. It works only after a user gestrue and microphone permission
+
+## Speech Synthesis APi
+
+    - We can make the wen app speach in the standard speaker based on a text transcript. it uses
+        synthesis voices from the OS
