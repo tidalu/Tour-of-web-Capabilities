@@ -274,3 +274,7 @@
         -- Lightning estimation
         -- Hit testing
     - It works with AR and VR , using devices or jsut a magic widow
+
+## Screen Wake Lock API
+
+    - It can make our screen visible all the time , disabling lock from OS
