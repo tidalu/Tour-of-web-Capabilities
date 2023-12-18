@@ -426,7 +426,15 @@
 
     - we can read contact from user's database
 
-### Full screen AP
+### Full screen
 
     - We can request one DOM element to enter fullscreen. On iPhone it works only with <video>.
         Safari uses prefix :(
+
+### Payment request
+
+    - The browser is the intermediary
+    - Merchant (website)
+    - User
+    - Payment Processor
+    - Apple Pay JS is also available
