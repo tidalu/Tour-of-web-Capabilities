@@ -332,3 +332,16 @@
 ## Vibration - Battery Status API
 
     - It does not work on Many browsers
+
+## Web NFC
+
+    - Near Field Communication
+    - Access to Tap to Pay, Tap to Share, etc.
+    - We can access tags within (5-10cm, 2-4 inches)
+    - The current scope is limited to NDEF (NFC Data Exchange Format): a lightweight binary
+        message format.
+        - We can read tags
+        - We can write to tags on compatible browsers and tags
+    - Low-level I/O operations and Host-based Card Emulation (HCE) are not supported.
+
+    - We will need user's permission and then we will start scanning for NFc tags
