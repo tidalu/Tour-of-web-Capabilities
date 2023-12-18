@@ -306,3 +306,29 @@
     - It is a low-level API
     - Connect to music devices, such as synthesizers, keyboards, guitars, drum machines and also lightning systems
     - Send and receive MIDI messages
+
+## Web Serial
+
+    - It is  a low-level API
+    - Communication with serial devices connected to a user's computer via USB, Bluetooth, or
+        other serial connections
+    - Built on top of the existing serail protocol, which is widely supported by devices and
+        operating systems
+    - It requires user permission before allowing
+        web applications to access serial devices.
+    - Sending and receiving data, controlling settings, and detecting device disconnection.
+
+## Web USB
+
+    - It's a low-level API; targeted to device vendors
+        mainly
+    - The device should not be registered by the OS yet with a driver
+    - Communication with USB devices connected to a user's computer.
+    - Read and write data directly to and from USB devices, without the need for custom drivers
+        or proprietary software.
+    - It requires user permission before allowing web applications to access USB devices.
+    - Configuring device settings, updating firmware, and accessing device data.
+
+## Vibration
+
+    - It does not work on Many browsers
