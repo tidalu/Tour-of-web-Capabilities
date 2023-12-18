@@ -470,4 +470,19 @@
         - this is for mainly not just opening the app, opening specific target when we open the app
     ```
 
-### App
+### App badging
+
+    - It lets us alert the user that there is new content or pending tasks in our app
+
+    - Android: Chrome and Edge
+    - Windows: Chrome and Edge
+    - macOS: Chrome and Edge
+    - iOS and iPadOS: Installed PWAs (only available after a Web Push notification was received)
+
+
+    - Showing the number is not guaranteed
+    - Setting the badge as zero will clear it
+    - Platforms are using a best effort scenario
+    - Some platforms, such as some Android devices don't support badges, so they use a notification dot instead
+    - Other platforms might crop or display large numbers in different ways, such as showing
+        99+ in the badge instead of 1285

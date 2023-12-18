@@ -46,3 +46,12 @@ if (app) {
   // app was found
   console.log(`${app.id} version ${app.version} is installed`);
 }
+
+// App bading APi
+
+if ('setAppBadge' in navigator) {
+  navigator.setAppBadge(24);
+}
+if ('clearAppBadge' in navigator) {
+  navigator.clearAppBadge();
+}
