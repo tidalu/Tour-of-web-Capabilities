@@ -422,6 +422,11 @@
 
     ```
 
-## Contact picker
+### Contact picker
 
     - we can read contact from user's database
+
+### Full screen AP
+
+    - We can request one DOM element to enter fullscreen. On iPhone it works only with <video>.
+        Safari uses prefix :(

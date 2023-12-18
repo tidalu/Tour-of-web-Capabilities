@@ -27,3 +27,10 @@ navigator.share({
 const props = ['name', 'email', 'tel', 'address', 'icon'];
 const opts = { multiple: true };
 const contacts = await navigator.contacts.select(props, opts);
+
+// full screen api
+
+domElement.requestFullscreen();
+const currentFS = document.fullscreenElement;
+document.exitFullscreen();
+document.addEventListener('fullscreenchange', (event) => {});
