@@ -245,3 +245,11 @@
 
     - We can make the wen app speach in the standard speaker based on a text transcript. it uses
         synthesis voices from the OS
+
+## Shape detection API
+
+    - This is an experimental API working on Chrome and Android only
+
+## Face Detector API
+
+## Text detector APi
