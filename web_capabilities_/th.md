@@ -439,7 +439,7 @@
     - Payment Processor
     - Apple Pay JS is also available
 
-## Get installed related Apps
+### Get installed related Apps
 
     - important
         - We need to know the native app's package ID, typically in the form of: com.domain.app-name
@@ -458,7 +458,7 @@
 
     - then we can start using the api, to detect if the app is installed or not
 
-## Smart app banner
+### Smart app banner
 
     - for ios and ipadOS we have a meta tag for AppStore apps
     ```
@@ -469,3 +469,5 @@
         <mate name="appel-itunes-app" content="app-id=com.myapp.pwa,app-argument=myapp.com/deep/link">
         - this is for mainly not just opening the app, opening specific target when we open the app
     ```
+
+### App
