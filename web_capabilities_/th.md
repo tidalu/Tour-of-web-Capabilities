@@ -278,3 +278,15 @@
 ## Screen Wake Lock API
 
     - It can make our screen visible all the time , disabling lock from OS
+
+## Web Bluetooth
+
+    - with this  API we can :
+        1. Scan BLE devices
+        2. scan services available
+        3. connect to these services
+        4. send and recieve data
+
+    - it is a low-level API
+    - We need to munipulate binary data
+    - We need to understand these device's comminucation protocol
