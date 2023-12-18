@@ -236,3 +236,7 @@
     - It is a low level API
 
     - U need to know the device communication API
+
+## Speech Recognition API
+
+    - It allows us to listen for user's voice and get a text transcript. It works only after a user gestrue and microphone permission
