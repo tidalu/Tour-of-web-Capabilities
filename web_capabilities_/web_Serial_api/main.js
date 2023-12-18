@@ -12,3 +12,14 @@ battery.addEventListener('chargingchange', () => {});
 battery.addEventListener('levelchange', () => {});
 battery.addEventListener('chargingtimechange', () => {});
 battery.addEventListener('dischargingtimechange', () => {});
+
+// IDLE Detection
+
+if ((await idleDetector.requestPermission()) == 'granted') {
+  const idleDetector = new IdleDetector();
+  idleDetector.addEventListener('change', () => {
+    const userState = idleDetector.userState;
+    const screenState = idleDetector.screenState;
+  });
+  await idleDetector.start();
+}
