@@ -351,3 +351,10 @@
 ### Multi-screen windows placement API
 
     - we can move windows !
+
+### Windows controls overlay
+
+    - in the web app manifest we can express a new display mode
+    ```
+       "display_override": ["window-controls-overlay"]
+    ```

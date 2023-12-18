@@ -2,3 +2,5 @@
 
 const screenDetails = await window.getScreenDetails();
 screenDetails.addEventListener('screenschange', (e) => {});
+
+// Windows controls overlay
