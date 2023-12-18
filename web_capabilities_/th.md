@@ -421,3 +421,7 @@
         }
 
     ```
+
+## Contact picker
+
+    - we can read contact from user's database

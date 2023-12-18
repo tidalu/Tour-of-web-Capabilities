@@ -22,4 +22,8 @@ navigator.share({
   // optional files array available
 });
 
-// web share target
+// contact picker
+
+const props = ['name', 'email', 'tel', 'address', 'icon'];
+const opts = { multiple: true };
+const contacts = await navigator.contacts.select(props, opts);
