@@ -260,3 +260,17 @@
     - Also known as Camera PTZ(Pan, tilt, Zoom)
     - It can be used to adjust the input stream for live streaming or for taking photos
     - It is useful for mixing it with UI controls
+
+## Argumented Reality {AR / XR}
+
+    - We can use WebXR to use VR.AR devices and then render content in WebGL/WebGPU
+    - WebXR is low-level API , but we can use High-level solution for AR objects on the screen
+    - For WebXR, different APIs are available for
+        -- Devices avaiilable
+        -- 3D space detection
+        -- Pose
+        -- Deoth sensing
+        -- create Vectors representing the movents of input control \
+        -- Lightning estimation
+        -- Hit testing
+    - It works with AR and VR , using devices or jsut a magic widow
