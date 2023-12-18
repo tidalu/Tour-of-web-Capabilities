@@ -457,3 +457,15 @@
         ```
 
     - then we can start using the api, to detect if the app is installed or not
+
+## Smart app banner
+
+    - for ios and ipadOS we have a meta tag for AppStore apps
+    ```
+        <mate name="appel-itunes-app" content="app-id=com.myapp.pwa">
+
+        - second version
+
+        <mate name="appel-itunes-app" content="app-id=com.myapp.pwa,app-argument=myapp.com/deep/link">
+        - this is for mainly not just opening the app, opening specific target when we open the app
+    ```
