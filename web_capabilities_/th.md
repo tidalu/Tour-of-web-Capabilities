@@ -394,3 +394,30 @@
         ```
     - We can now use it in a standard link
         ```<a href="web+frontendmasters: /swift>Max's Swift Course /a>```
+
+### Web Share
+
+    ```
+        navigator.share({
+          title: 'firt.dev',
+          text: 'Content for web devs about PWAs',
+          url: 'https: /firt.dev',
+          // optional files array available
+        });
+    ```
+
+### Web share Target
+
+    - we can express in the web app manifest our intentions
+
+    ```
+            "share_target": {
+                "action": "/receiving-share/",
+                "method": "GET",
+                "params": {
+                "id": "id",
+                "text": "contents",
+            }
+        }
+
+    ```

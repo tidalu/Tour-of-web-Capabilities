@@ -12,3 +12,14 @@ launchQueue.setConsumer((launchParams) => {
     // Handle each file
   }
 });
+
+// web share
+
+navigator.share({
+  title: 'firt.dev',
+  text: 'Content for web devs about PWAs',
+  url: 'https: /firt.dev',
+  // optional files array available
+});
+
+// web share target
