@@ -486,3 +486,25 @@
     - Some platforms, such as some Android devices don't support badges, so they use a notification dot instead
     - Other platforms might crop or display large numbers in different ways, such as showing
         99+ in the badge instead of 1285
+
+### App Shortcut API [desktop, android only]
+
+    - Menu items that will appear on icon launcher's contextual menu (right click or long press)
+    - Each menu item will open a navigation within the PWA to a different URL
+    - Menu items are defined statically per app
+    - Changing them requires changing the App Manifest
+
+    - New keys in Manifest; same rules as UI top-level properties
+    ```
+        "shortcuts": [{
+        "name": "Open a Second Action",
+        "short_name": "Second",
+        "description": "",
+        "url": "/second-action",
+        "icons": [{
+            "src": "/icons/second.png",
+            "sizes": "192x192",
+            "type": "image/png"
+            }]
+        }]
+    ```
