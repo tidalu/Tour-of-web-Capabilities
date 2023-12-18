@@ -246,10 +246,17 @@
     - We can make the wen app speach in the standard speaker based on a text transcript. it uses
         synthesis voices from the OS
 
-## Shape detection API
+## Shape detection API - Face Detector API Text detector APi
 
     - This is an experimental API working on Chrome and Android only
 
-## Face Detector API
+## Media Devices
 
-## Text detector APi
+    - It let's u to open the camera and mictophone to get the stream. for years, it was known
+        as getUserMedia
+
+## Advanced Control Camera
+
+    - Also known as Camera PTZ(Pan, tilt, Zoom)
+    - It can be used to adjust the input stream for live streaming or for taking photos
+    - It is useful for mixing it with UI controls
