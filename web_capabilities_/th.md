@@ -290,3 +290,13 @@
     - it is a low-level API
     - We need to munipulate binary data
     - We need to understand these device's comminucation protocol
+    - We can connect to devices that we never connected before on that participar device
+
+## Web Audio
+
+    - We can use the web audio API:
+        - generate dynamic audio
+        - 3D
+        - useful for ultrasound communication with devices
+
+    - We are using SonicSocket library { using web audio for ultraSound networking}
