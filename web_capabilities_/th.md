@@ -300,3 +300,9 @@
         - useful for ultrasound communication with devices
 
     - We are using SonicSocket library { using web audio for ultraSound networking}
+
+## Web MIDI
+
+    - It is a low-level API
+    - Connect to music devices, such as synthesizers, keyboards, guitars, drum machines and also lightning systems
+    - Send and receive MIDI messages
