@@ -438,3 +438,22 @@
     - User
     - Payment Processor
     - Apple Pay JS is also available
+
+## Get installed related Apps
+
+    - important
+        - We need to know the native app's package ID, typically in the form of: com.domain.app-name
+
+    - we start with the web app manifest
+
+        ```
+            "related_applications": [
+                {
+                    "platform": "play",
+                     "id": "com.myapp.pwa",
+                     "url": "https://play.google.com/store/apps/details?id=com.myapp.pwa",
+                }
+            ]
+        ```
+
+    - then we can start using the api, to detect if the app is installed or not
