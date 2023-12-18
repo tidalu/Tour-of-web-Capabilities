@@ -358,3 +358,39 @@
     ```
        "display_override": ["window-controls-overlay"]
     ```
+
+### File Handler
+
+    - in the web app manifest we can express our intentions
+    ```
+        "file_handlers": [
+            {
+             "action": "/readcsv",
+             "accept": {
+                "text/csv": [".csv"]
+             },
+             "icons": [
+                // ...
+             ],
+             "launch_type": "single-client"
+             }
+        ]
+    ```
+    - In JavaScript then we can check on the launch queue if there are files to process
+
+### ULR Protocol Handler
+
+    - in the web app manifest we can express our protocol that must be prefixed with web+
+
+        ```
+            {
+                "protocol_handlers": [
+                {
+                    "protocol": "web+frontendmasters",
+                    "url": "/watch?argument=%s"
+                },
+                ]
+            }
+        ```
+    - We can now use it in a standard link
+        ```<a href="web+frontendmasters: /swift>Max's Swift Course /a>```
