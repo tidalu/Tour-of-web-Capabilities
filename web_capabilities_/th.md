@@ -224,4 +224,15 @@
 
         margin-block-end: env(keyboard-insert-height, 100px);
 
+## Web HID API {Human Innterface Device}
 
+    - It works on chromium based browsers (not on safari)
+    - let us access devices connected to a user's computer via USB or Bluetooth
+    - Built on top of the widely adopted HID protocol
+    - Providers users with control over which devices web applications can access
+    - User must grant permission through a browser dialog box before a web application can
+        access a device
+    - Userful for non-standard input devices
+    - It is a low level API
+
+    - U need to know the device communication API
